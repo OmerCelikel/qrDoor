@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>983000795414-te0he3fq1k69kjjj3bj4ovl14l3s4a4l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.983000795414-te0he3fq1k69kjjj3bj4ovl14l3s4a4l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB3Fw19u3fOiYEp2ePinj8knqoK8cZoNPQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>983000795414</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.omercelikel.qrDoor</string>
+	<key>PROJECT_ID</key>
+	<string>qr-door-80fce</string>
+	<key>STORAGE_BUCKET</key>
+	<string>qr-door-80fce.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:983000795414:ios:07f68700f11348fae0e837</string>
+</dict>
+</plist>

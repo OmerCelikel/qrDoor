@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F60797232A09666A0030CFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797222A09666A0030CFC8 /* AppDelegate.swift */; };
+		F60797252A09666A0030CFC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797242A09666A0030CFC8 /* SceneDelegate.swift */; };
+		F60797272A09666A0030CFC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797262A09666A0030CFC8 /* ViewController.swift */; };
+		F607972A2A09666A0030CFC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60797282A09666A0030CFC8 /* Main.storyboard */; };
+		F607972C2A09666B0030CFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F607972B2A09666B0030CFC8 /* Assets.xcassets */; };
+		F607972F2A09666B0030CFC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F607972D2A09666B0030CFC8 /* LaunchScreen.storyboard */; };
+		F607973A2A09666B0030CFC8 /* qrDoorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797392A09666B0030CFC8 /* qrDoorTests.swift */; };
+		F60797442A09666B0030CFC8 /* qrDoorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797432A09666B0030CFC8 /* qrDoorUITests.swift */; };
+		F60797462A09666B0030CFC8 /* qrDoorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797452A09666B0030CFC8 /* qrDoorUITestsLaunchTests.swift */; };
+		F60797532A0966AF0030CFC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F60797522A0966AF0030CFC8 /* GoogleService-Info.plist */; };
+		F60797562A0967AF0030CFC8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F60797552A0967AF0030CFC8 /* FirebaseAnalytics */; };
+		F60797582A0967AF0030CFC8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F60797572A0967AF0030CFC8 /* FirebaseAuth */; };
+		F607975A2A0967AF0030CFC8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F60797592A0967AF0030CFC8 /* FirebaseFirestore */; };
+		F607975D2A0969A50030CFC8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607975C2A0969A50030CFC8 /* Utilities.swift */; };
+		F607975F2A0969B70030CFC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607975E2A0969B70030CFC8 /* Constants.swift */; };
+		F60797622A096C760030CFC8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797612A096C760030CFC8 /* SignUpViewController.swift */; };
+		F60797642A096C800030CFC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797632A096C800030CFC8 /* LoginViewController.swift */; };
+		F60797662A096C870030CFC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797652A096C870030CFC8 /* HomeViewController.swift */; };
+		F60797682A096C910030CFC8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797672A096C910030CFC8 /* StartViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F60797362A09666B0030CFC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F60797172A09666A0030CFC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F607971E2A09666A0030CFC8;
+			remoteInfo = qrDoor;
+		};
+		F60797402A09666B0030CFC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F60797172A09666A0030CFC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F607971E2A09666A0030CFC8;
+			remoteInfo = qrDoor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F607971F2A09666A0030CFC8 /* qrDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60797222A09666A0030CFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F60797242A09666A0030CFC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F60797262A09666A0030CFC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F60797292A09666A0030CFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F607972B2A09666B0030CFC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F607972E2A09666B0030CFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F60797302A09666B0030CFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F60797352A09666B0030CFC8 /* qrDoorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qrDoorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60797392A09666B0030CFC8 /* qrDoorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrDoorTests.swift; sourceTree = "<group>"; };
+		F607973F2A09666B0030CFC8 /* qrDoorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qrDoorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60797432A09666B0030CFC8 /* qrDoorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrDoorUITests.swift; sourceTree = "<group>"; };
+		F60797452A09666B0030CFC8 /* qrDoorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrDoorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F60797522A0966AF0030CFC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F607975C2A0969A50030CFC8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		F607975E2A0969B70030CFC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F60797612A096C760030CFC8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F60797632A096C800030CFC8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F60797652A096C870030CFC8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F60797672A096C910030CFC8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		F607976A2A096DF70030CFC8 /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F607971C2A09666A0030CFC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60797562A0967AF0030CFC8 /* FirebaseAnalytics in Frameworks */,
+				F60797582A0967AF0030CFC8 /* FirebaseAuth in Frameworks */,
+				F607975A2A0967AF0030CFC8 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60797322A09666B0030CFC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F607973C2A09666B0030CFC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F60797162A09666A0030CFC8 = {
+			isa = PBXGroup;
+			children = (
+				F60797212A09666A0030CFC8 /* qrDoor */,
+				F60797382A09666B0030CFC8 /* qrDoorTests */,
+				F60797422A09666B0030CFC8 /* qrDoorUITests */,
+				F60797202A09666A0030CFC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F60797202A09666A0030CFC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F607971F2A09666A0030CFC8 /* qrDoor.app */,
+				F60797352A09666B0030CFC8 /* qrDoorTests.xctest */,
+				F607973F2A09666B0030CFC8 /* qrDoorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F60797212A09666A0030CFC8 /* qrDoor */ = {
+			isa = PBXGroup;
+			children = (
+				F60797692A096DEE0030CFC8 /* Media */,
+				F60797602A096C520030CFC8 /* ViewControllers */,
+				F607975B2A0969690030CFC8 /* Helpers */,
+				F60797222A09666A0030CFC8 /* AppDelegate.swift */,
+				F60797242A09666A0030CFC8 /* SceneDelegate.swift */,
+				F60797262A09666A0030CFC8 /* ViewController.swift */,
+				F60797282A09666A0030CFC8 /* Main.storyboard */,
+				F607972B2A09666B0030CFC8 /* Assets.xcassets */,
+				F607972D2A09666B0030CFC8 /* LaunchScreen.storyboard */,
+				F60797302A09666B0030CFC8 /* Info.plist */,
+				F60797522A0966AF0030CFC8 /* GoogleService-Info.plist */,
+			);
+			path = qrDoor;
+			sourceTree = "<group>";
+		};
+		F60797382A09666B0030CFC8 /* qrDoorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F60797392A09666B0030CFC8 /* qrDoorTests.swift */,
+			);
+			path = qrDoorTests;
+			sourceTree = "<group>";
+		};
+		F60797422A09666B0030CFC8 /* qrDoorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F60797432A09666B0030CFC8 /* qrDoorUITests.swift */,
+				F60797452A09666B0030CFC8 /* qrDoorUITestsLaunchTests.swift */,
+			);
+			path = qrDoorUITests;
+			sourceTree = "<group>";
+		};
+		F607975B2A0969690030CFC8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F607975C2A0969A50030CFC8 /* Utilities.swift */,
+				F607975E2A0969B70030CFC8 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F60797602A096C520030CFC8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F60797612A096C760030CFC8 /* SignUpViewController.swift */,
+				F60797632A096C800030CFC8 /* LoginViewController.swift */,
+				F60797652A096C870030CFC8 /* HomeViewController.swift */,
+				F60797672A096C910030CFC8 /* StartViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F60797692A096DEE0030CFC8 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				F607976A2A096DF70030CFC8 /* loginbg.mp4 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F607971E2A09666A0030CFC8 /* qrDoor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60797492A09666B0030CFC8 /* Build configuration list for PBXNativeTarget "qrDoor" */;
+			buildPhases = (
+				F607971B2A09666A0030CFC8 /* Sources */,
+				F607971C2A09666A0030CFC8 /* Frameworks */,
+				F607971D2A09666A0030CFC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qrDoor;
+			packageProductDependencies = (
+				F60797552A0967AF0030CFC8 /* FirebaseAnalytics */,
+				F60797572A0967AF0030CFC8 /* FirebaseAuth */,
+				F60797592A0967AF0030CFC8 /* FirebaseFirestore */,
+			);
+			productName = qrDoor;
+			productReference = F607971F2A09666A0030CFC8 /* qrDoor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F60797342A09666B0030CFC8 /* qrDoorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F607974C2A09666B0030CFC8 /* Build configuration list for PBXNativeTarget "qrDoorTests" */;
+			buildPhases = (
+				F60797312A09666B0030CFC8 /* Sources */,
+				F60797322A09666B0030CFC8 /* Frameworks */,
+				F60797332A09666B0030CFC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F60797372A09666B0030CFC8 /* PBXTargetDependency */,
+			);
+			name = qrDoorTests;
+			productName = qrDoorTests;
+			productReference = F60797352A09666B0030CFC8 /* qrDoorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F607973E2A09666B0030CFC8 /* qrDoorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F607974F2A09666B0030CFC8 /* Build configuration list for PBXNativeTarget "qrDoorUITests" */;
+			buildPhases = (
+				F607973B2A09666B0030CFC8 /* Sources */,
+				F607973C2A09666B0030CFC8 /* Frameworks */,
+				F607973D2A09666B0030CFC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F60797412A09666B0030CFC8 /* PBXTargetDependency */,
+			);
+			name = qrDoorUITests;
+			productName = qrDoorUITests;
+			productReference = F607973F2A09666B0030CFC8 /* qrDoorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F60797172A09666A0030CFC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F607971E2A09666A0030CFC8 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					F60797342A09666B0030CFC8 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F607971E2A09666A0030CFC8;
+					};
+					F607973E2A09666B0030CFC8 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F607971E2A09666A0030CFC8;
+					};
+				};
+			};
+			buildConfigurationList = F607971A2A09666A0030CFC8 /* Build configuration list for PBXProject "qrDoor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F60797162A09666A0030CFC8;
+			packageReferences = (
+				F60797542A0967AF0030CFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F60797202A09666A0030CFC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F607971E2A09666A0030CFC8 /* qrDoor */,
+				F60797342A09666B0030CFC8 /* qrDoorTests */,
+				F607973E2A09666B0030CFC8 /* qrDoorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F607971D2A09666A0030CFC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F607972F2A09666B0030CFC8 /* LaunchScreen.storyboard in Resources */,
+				F607972C2A09666B0030CFC8 /* Assets.xcassets in Resources */,
+				F607972A2A09666A0030CFC8 /* Main.storyboard in Resources */,
+				F60797532A0966AF0030CFC8 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60797332A09666B0030CFC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F607973D2A09666B0030CFC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F607971B2A09666A0030CFC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60797642A096C800030CFC8 /* LoginViewController.swift in Sources */,
+				F60797622A096C760030CFC8 /* SignUpViewController.swift in Sources */,
+				F607975F2A0969B70030CFC8 /* Constants.swift in Sources */,
+				F60797682A096C910030CFC8 /* StartViewController.swift in Sources */,
+				F60797662A096C870030CFC8 /* HomeViewController.swift in Sources */,
+				F60797272A09666A0030CFC8 /* ViewController.swift in Sources */,
+				F60797232A09666A0030CFC8 /* AppDelegate.swift in Sources */,
+				F607975D2A0969A50030CFC8 /* Utilities.swift in Sources */,
+				F60797252A09666A0030CFC8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60797312A09666B0030CFC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F607973A2A09666B0030CFC8 /* qrDoorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F607973B2A09666B0030CFC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60797442A09666B0030CFC8 /* qrDoorUITests.swift in Sources */,
+				F60797462A09666B0030CFC8 /* qrDoorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F60797372A09666B0030CFC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F607971E2A09666A0030CFC8 /* qrDoor */;
+			targetProxy = F60797362A09666B0030CFC8 /* PBXContainerItemProxy */;
+		};
+		F60797412A09666B0030CFC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F607971E2A09666A0030CFC8 /* qrDoor */;
+			targetProxy = F60797402A09666B0030CFC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F60797282A09666A0030CFC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F60797292A09666A0030CFC8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F607972D2A09666B0030CFC8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F607972E2A09666B0030CFC8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F60797472A09666B0030CFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F60797482A09666B0030CFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F607974A2A09666B0030CFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7KP5757Z8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = qrDoor/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omercelikel.qrDoor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F607974B2A09666B0030CFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7KP5757Z8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = qrDoor/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omercelikel.qrDoor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F607974D2A09666B0030CFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7KP5757Z8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omercelikel.qrDoorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qrDoor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/qrDoor";
+			};
+			name = Debug;
+		};
+		F607974E2A09666B0030CFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7KP5757Z8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omercelikel.qrDoorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qrDoor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/qrDoor";
+			};
+			name = Release;
+		};
+		F60797502A09666B0030CFC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7KP5757Z8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omercelikel.qrDoorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = qrDoor;
+			};
+			name = Debug;
+		};
+		F60797512A09666B0030CFC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7KP5757Z8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omercelikel.qrDoorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = qrDoor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F607971A2A09666A0030CFC8 /* Build configuration list for PBXProject "qrDoor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60797472A09666B0030CFC8 /* Debug */,
+				F60797482A09666B0030CFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60797492A09666B0030CFC8 /* Build configuration list for PBXNativeTarget "qrDoor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F607974A2A09666B0030CFC8 /* Debug */,
+				F607974B2A09666B0030CFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F607974C2A09666B0030CFC8 /* Build configuration list for PBXNativeTarget "qrDoorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F607974D2A09666B0030CFC8 /* Debug */,
+				F607974E2A09666B0030CFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F607974F2A09666B0030CFC8 /* Build configuration list for PBXNativeTarget "qrDoorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60797502A09666B0030CFC8 /* Debug */,
+				F60797512A09666B0030CFC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F60797542A0967AF0030CFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F60797552A0967AF0030CFC8 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F60797542A0967AF0030CFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F60797572A0967AF0030CFC8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F60797542A0967AF0030CFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F60797592A0967AF0030CFC8 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F60797542A0967AF0030CFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F60797172A09666A0030CFC8 /* Project object */;
+}
