@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Lt-Cd-ddA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Lt-Cd-ddA">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -63,7 +63,7 @@
         <!--Login View Controller-->
         <scene sceneID="XeG-Wd-EsH">
             <objects>
-                <viewController id="Tfg-Z7-zTf" customClass="LoginViewController" customModule="CustomLoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tfg-Z7-zTf" customClass="LoginViewController" customModule="qrDoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p4Z-yY-lGD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,6 +87,9 @@
                                             <constraint firstAttribute="height" constant="50" id="yua-If-T2m"/>
                                         </constraints>
                                         <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="Tfg-Z7-zTf" eventType="touchUpInside" id="qaw-0E-y6c"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8n-jp-lCq">
                                         <rect key="frame" x="0.0" y="210" width="295" height="20.333333333333343"/>
@@ -110,6 +113,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eQT-mo-V6Z"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="wEk-Qk-CHc" id="W5g-yB-bkk"/>
+                        <outlet property="errorLabel" destination="R8n-jp-lCq" id="xAB-38-5Vc"/>
+                        <outlet property="loginButton" destination="bsw-AQ-5BQ" id="R1l-Rs-cSV"/>
+                        <outlet property="passwordTextField" destination="Qpe-wj-RRS" id="Qvx-dz-Fmk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fq2-ZX-c08" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,7 +127,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="DKL-lX-ZaX">
             <objects>
-                <viewController id="QdQ-jf-RdU" customClass="SignUpViewController" customModule="CustomLoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QdQ-jf-RdU" customClass="SignUpViewController" customModule="qrDoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QOa-WQ-WrX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,6 +161,9 @@
                                             <constraint firstAttribute="height" constant="50" id="Jg7-Fl-YEW"/>
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUpTapped:" destination="QdQ-jf-RdU" eventType="touchUpInside" id="cV6-Ie-C4X"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnh-7e-k5l">
                                         <rect key="frame" x="0.0" y="350" width="295" height="20.333333333333314"/>
@@ -177,6 +189,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xxz-Js-5aw"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Olc-hb-YBK" id="kie-lJ-pvJ"/>
+                        <outlet property="errorLabel" destination="Vnh-7e-k5l" id="iPy-En-4hu"/>
+                        <outlet property="firstNameTextField" destination="FFR-pe-G4E" id="Jee-bS-h2J"/>
+                        <outlet property="lastNameTextField" destination="AWA-Gj-zMW" id="hwC-G2-h8F"/>
+                        <outlet property="passwordTextField" destination="k76-pf-GYm" id="Zul-sv-aR4"/>
+                        <outlet property="signUpButton" destination="5Hf-fP-4wH" id="glH-c6-DIj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2s-Wl-xXz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,7 +205,7 @@
         <!--Home View Controller-->
         <scene sceneID="AXY-Ry-YHg">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="4kN-8Y-DZa" customClass="HomeViewController" customModule="CustomLoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="4kN-8Y-DZa" customClass="HomeViewController" customModule="qrDoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4he-7C-dZ4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

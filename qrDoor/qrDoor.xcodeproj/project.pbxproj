@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F60797232A09666A0030CFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797222A09666A0030CFC8 /* AppDelegate.swift */; };
 		F60797252A09666A0030CFC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797242A09666A0030CFC8 /* SceneDelegate.swift */; };
-		F60797272A09666A0030CFC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797262A09666A0030CFC8 /* ViewController.swift */; };
+		F60797272A09666A0030CFC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797262A09666A0030CFC8 /* HomeViewController.swift */; };
 		F607972A2A09666A0030CFC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60797282A09666A0030CFC8 /* Main.storyboard */; };
 		F607972C2A09666B0030CFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F607972B2A09666B0030CFC8 /* Assets.xcassets */; };
 		F607972F2A09666B0030CFC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F607972D2A09666B0030CFC8 /* LaunchScreen.storyboard */; };
@@ -24,7 +24,6 @@
 		F607975F2A0969B70030CFC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607975E2A0969B70030CFC8 /* Constants.swift */; };
 		F60797622A096C760030CFC8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797612A096C760030CFC8 /* SignUpViewController.swift */; };
 		F60797642A096C800030CFC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797632A096C800030CFC8 /* LoginViewController.swift */; };
-		F60797662A096C870030CFC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797652A096C870030CFC8 /* HomeViewController.swift */; };
 		F60797682A096C910030CFC8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797672A096C910030CFC8 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +48,7 @@
 		F607971F2A09666A0030CFC8 /* qrDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60797222A09666A0030CFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F60797242A09666A0030CFC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F60797262A09666A0030CFC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F60797262A09666A0030CFC8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		F60797292A09666A0030CFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F607972B2A09666B0030CFC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F607972E2A09666B0030CFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +63,6 @@
 		F607975E2A0969B70030CFC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F60797612A096C760030CFC8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F60797632A096C800030CFC8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F60797652A096C870030CFC8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F60797672A096C910030CFC8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		F607976A2A096DF70030CFC8 /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +95,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56A2B4492A0A0C1700432AC7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F60797222A09666A0030CFC8 /* AppDelegate.swift */,
+				F60797242A09666A0030CFC8 /* SceneDelegate.swift */,
+				F607972B2A09666B0030CFC8 /* Assets.xcassets */,
+				F60797282A09666A0030CFC8 /* Main.storyboard */,
+				F607972D2A09666B0030CFC8 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		F60797162A09666A0030CFC8 = {
 			isa = PBXGroup;
 			children = (
@@ -120,15 +130,10 @@
 		F60797212A09666A0030CFC8 /* qrDoor */ = {
 			isa = PBXGroup;
 			children = (
+				56A2B4492A0A0C1700432AC7 /* App */,
 				F60797692A096DEE0030CFC8 /* Media */,
 				F60797602A096C520030CFC8 /* ViewControllers */,
 				F607975B2A0969690030CFC8 /* Helpers */,
-				F60797222A09666A0030CFC8 /* AppDelegate.swift */,
-				F60797242A09666A0030CFC8 /* SceneDelegate.swift */,
-				F60797262A09666A0030CFC8 /* ViewController.swift */,
-				F60797282A09666A0030CFC8 /* Main.storyboard */,
-				F607972B2A09666B0030CFC8 /* Assets.xcassets */,
-				F607972D2A09666B0030CFC8 /* LaunchScreen.storyboard */,
 				F60797302A09666B0030CFC8 /* Info.plist */,
 				F60797522A0966AF0030CFC8 /* GoogleService-Info.plist */,
 			);
@@ -164,9 +169,9 @@
 		F60797602A096C520030CFC8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F60797262A09666A0030CFC8 /* HomeViewController.swift */,
 				F60797612A096C760030CFC8 /* SignUpViewController.swift */,
 				F60797632A096C800030CFC8 /* LoginViewController.swift */,
-				F60797652A096C870030CFC8 /* HomeViewController.swift */,
 				F60797672A096C910030CFC8 /* StartViewController.swift */,
 			);
 			path = ViewControllers;
@@ -324,8 +329,7 @@
 				F60797622A096C760030CFC8 /* SignUpViewController.swift in Sources */,
 				F607975F2A0969B70030CFC8 /* Constants.swift in Sources */,
 				F60797682A096C910030CFC8 /* StartViewController.swift in Sources */,
-				F60797662A096C870030CFC8 /* HomeViewController.swift in Sources */,
-				F60797272A09666A0030CFC8 /* ViewController.swift in Sources */,
+				F60797272A09666A0030CFC8 /* HomeViewController.swift in Sources */,
 				F60797232A09666A0030CFC8 /* AppDelegate.swift in Sources */,
 				F607975D2A0969A50030CFC8 /* Utilities.swift in Sources */,
 				F60797252A09666A0030CFC8 /* SceneDelegate.swift in Sources */,
