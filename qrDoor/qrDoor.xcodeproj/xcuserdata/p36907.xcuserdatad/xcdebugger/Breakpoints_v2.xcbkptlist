@@ -3,4 +3,54 @@
    uuid = "BE06A406-D5EF-42A1-AF70-8F209117D9F0"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FDF5A8D7-BBDE-49AD-BDE4-33215E16E512"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "qrDoor/ViewControllers/LandlordHomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FDF5A8D7-BBDE-49AD-BDE4-33215E16E512 - c568506faef1858f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in qrDoor.LandlordHomeViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "qrDoor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/p36907/Documents/GitHub/qrDoor/qrDoor/qrDoor/ViewControllers/LandlordHomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "290">
+               </Location>
+               <Location
+                  uuid = "FDF5A8D7-BBDE-49AD-BDE4-33215E16E512 - c568506faef1858f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in qrDoor.LandlordHomeViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "qrDoor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/p36907/Documents/GitHub/qrDoor/qrDoor/qrDoor/ViewControllers/LandlordHomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "351">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

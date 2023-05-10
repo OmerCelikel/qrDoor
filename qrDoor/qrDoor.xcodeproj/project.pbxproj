@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56A2B44B2A0A666700432AC7 /* GeneralLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A2B44A2A0A666700432AC7 /* GeneralLoginViewController.swift */; };
+		56A2B44D2A0A685000432AC7 /* LandlordHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A2B44C2A0A685000432AC7 /* LandlordHomeViewController.swift */; };
 		F60797232A09666A0030CFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797222A09666A0030CFC8 /* AppDelegate.swift */; };
 		F60797252A09666A0030CFC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797242A09666A0030CFC8 /* SceneDelegate.swift */; };
 		F60797272A09666A0030CFC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797262A09666A0030CFC8 /* HomeViewController.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56A2B44A2A0A666700432AC7 /* GeneralLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralLoginViewController.swift; sourceTree = "<group>"; };
+		56A2B44C2A0A685000432AC7 /* LandlordHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordHomeViewController.swift; sourceTree = "<group>"; };
 		F607971F2A09666A0030CFC8 /* qrDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60797222A09666A0030CFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F60797242A09666A0030CFC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				F60797612A096C760030CFC8 /* SignUpViewController.swift */,
 				F60797632A096C800030CFC8 /* LoginViewController.swift */,
 				F60797672A096C910030CFC8 /* StartViewController.swift */,
+				56A2B44A2A0A666700432AC7 /* GeneralLoginViewController.swift */,
+				56A2B44C2A0A685000432AC7 /* LandlordHomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -330,8 +336,10 @@
 				F607975F2A0969B70030CFC8 /* Constants.swift in Sources */,
 				F60797682A096C910030CFC8 /* StartViewController.swift in Sources */,
 				F60797272A09666A0030CFC8 /* HomeViewController.swift in Sources */,
+				56A2B44B2A0A666700432AC7 /* GeneralLoginViewController.swift in Sources */,
 				F60797232A09666A0030CFC8 /* AppDelegate.swift in Sources */,
 				F607975D2A0969A50030CFC8 /* Utilities.swift in Sources */,
+				56A2B44D2A0A685000432AC7 /* LandlordHomeViewController.swift in Sources */,
 				F60797252A09666A0030CFC8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
