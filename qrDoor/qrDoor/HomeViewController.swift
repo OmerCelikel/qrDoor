@@ -7,37 +7,37 @@
 
 import UIKit
 import Firebase
+import FirebaseFirestore
+
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var nameSurnameTextLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        // Get a reference to the current user's document
-//        guard let currentUser = Auth.auth().currentUser else {
-//            // If there is no logged in user, show an error message and return
-//            return
-//        }
-//
-//        let db = Firestore.firestore()
-//        let userRef = db.collection("users").document(currentUser.uid)
-//        let houseData: [String: Any] = [
-//            "address": "123 Main St",
-//            "city": "San Francisco",
-//            "state": "CA",
-//            "owner": userRef
-//        ]
-//
-//        // Add the new house document to the "houses" collection
-//        db.collection("houses").addDocument(data: houseData) { error in
-//            if let error = error {
-//                // Show error message if there was an error adding the new house document
-//                print("Error adding new house: \(error.localizedDescription)")
-//            } else {
-//                // Show success message if the new house document was added successfully
-//                print("Success", "New house added successfully!")
-//            }
-//
-//        }
+        fetchUserData()
+    }
+    
+    func fetchUserData() {
+        guard let currentUserID = Auth.auth().currentUser?.uid else {
+            // User is not logged in or user ID not available
+            return
+        }
+        print("currentUserID \(currentUserID)")
+        let db = Firestore.firestore()
+        let userRef = db.collection("users").document(currentUserID)
+        
+        userRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                let data = document.data()
+                if let firstName = data?["firstname"] as? String,
+                    let lastName = data?["lastname"] as? String {
+                    self.nameSurnameTextLabel.text = "\(firstName) \(lastName)"
+                }
+            } else {
+                print("User document does not exist")
+            }
+        }
     }
 }
+
