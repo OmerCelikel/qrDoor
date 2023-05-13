@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wua-Mu-FHw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Lt-Cd-ddA">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -275,8 +276,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.turn.up.backward.badge.clock.rtl" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JKE-Jb-tWy">
-                                                <rect key="frame" x="4" y="11.666666666666664" width="41" height="38.666666666666671"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right.arrow.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JKE-Jb-tWy">
+                                                <rect key="frame" x="5" y="9.6666666666666643" width="40" height="41.333333333333336"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="YtS-SD-29f"/>
@@ -418,14 +419,14 @@
                                     <constraint firstAttribute="width" constant="240" id="rZQ-5s-1sj"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn this side of the phone to the reader device and scan the QR code." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWF-EP-3r7">
-                                <rect key="frame" x="20" y="582" width="335" height="40.666666666666629"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn this side of the phone to the reader device and scan the QR code." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWF-EP-3r7">
+                                <rect key="frame" x="20" y="656.33333333333337" width="335" height="40.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="glT-0T-y3T">
-                                <rect key="frame" x="162.66666666666666" y="733" width="50" height="48.666666666666629"/>
+                                <rect key="frame" x="162.66666666666666" y="738" width="50" height="48.666666666666629"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="F2F-Ct-6fo"/>
@@ -437,7 +438,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FWF-EP-3r7" firstAttribute="leading" secondItem="bMt-zu-2JH" secondAttribute="leading" constant="20" id="0K1-C3-6Kz"/>
-                            <constraint firstItem="FWF-EP-3r7" firstAttribute="top" secondItem="DNd-QT-TZY" secondAttribute="bottom" constant="90" id="70X-FR-ceP"/>
+                            <constraint firstItem="glT-0T-y3T" firstAttribute="top" secondItem="FWF-EP-3r7" secondAttribute="bottom" constant="40" id="66M-N3-FCk"/>
                             <constraint firstItem="K4j-8Y-rE3" firstAttribute="centerX" secondItem="A1I-HB-cs8" secondAttribute="centerX" id="7mU-JA-sjJ"/>
                             <constraint firstItem="xxQ-AL-bpA" firstAttribute="leading" secondItem="bMt-zu-2JH" secondAttribute="leading" constant="30" id="Fd8-Em-DVH"/>
                             <constraint firstItem="aGw-qu-aha" firstAttribute="top" secondItem="bMt-zu-2JH" secondAttribute="top" constant="20" id="Mb3-F8-Rnu"/>
@@ -447,7 +448,7 @@
                             <constraint firstItem="FWF-EP-3r7" firstAttribute="centerX" secondItem="A1I-HB-cs8" secondAttribute="centerX" id="UJc-34-bxK"/>
                             <constraint firstItem="DNd-QT-TZY" firstAttribute="top" secondItem="K4j-8Y-rE3" secondAttribute="bottom" constant="50" id="bxb-gS-Mga"/>
                             <constraint firstItem="bMt-zu-2JH" firstAttribute="trailing" secondItem="xxQ-AL-bpA" secondAttribute="trailing" constant="30" id="bzj-qT-xnV"/>
-                            <constraint firstAttribute="bottom" secondItem="glT-0T-y3T" secondAttribute="bottom" constant="30" id="h51-10-xDM"/>
+                            <constraint firstAttribute="bottom" secondItem="glT-0T-y3T" secondAttribute="bottom" constant="25" id="h51-10-xDM"/>
                             <constraint firstItem="xxQ-AL-bpA" firstAttribute="centerX" secondItem="A1I-HB-cs8" secondAttribute="centerX" id="ofc-eb-ob2"/>
                             <constraint firstItem="K4j-8Y-rE3" firstAttribute="top" secondItem="xxQ-AL-bpA" secondAttribute="bottom" constant="30" id="s3e-6j-v5X"/>
                             <constraint firstItem="DNd-QT-TZY" firstAttribute="centerX" secondItem="A1I-HB-cs8" secondAttribute="centerX" id="wjB-XY-b2m"/>
@@ -478,7 +479,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrowshape.turn.up.backward.badge.clock.rtl" catalog="system" width="128" height="107"/>
+        <image name="arrow.right.arrow.left" catalog="system" width="120" height="128"/>
         <image name="bell" catalog="system" width="125" height="128"/>
         <image name="checkmark.shield" catalog="system" width="128" height="119"/>
         <image name="circle.fill" catalog="system" width="128" height="123"/>
