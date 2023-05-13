@@ -13,6 +13,9 @@ import FirebaseFirestore
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var nameSurnameTextLabel: UILabel!
+    
+    @IBOutlet weak var nameTextLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchUserData()
@@ -33,6 +36,7 @@ class HomeViewController: UIViewController {
                 if let firstName = data?["firstname"] as? String,
                     let lastName = data?["lastname"] as? String {
                     self.nameSurnameTextLabel.text = "\(firstName) \(lastName)"
+                    self.nameTextLabel.text = "\(firstName)"
                 }
             } else {
                 print("User document does not exist")
