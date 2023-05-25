@@ -29,8 +29,6 @@ class HomeViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(openQrCodeViewController))
         qrImageView.addGestureRecognizer(tapGesture)
         qrImageView.isUserInteractionEnabled = true
-        modalPresentationStyle = .fullScreen
-//        navigationItem.setHidesBackButton(true, animated: true)
 
     }
     

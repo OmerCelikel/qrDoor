@@ -8,22 +8,20 @@
 import UIKit
 
 class QrCodeViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var xmarkCircleView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Add tap gesture recognizer to xmarkCircleView
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(xmarkCircleViewTapped))
+        xmarkCircleView.addGestureRecognizer(tapGesture)
+        xmarkCircleView.isUserInteractionEnabled = true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func xmarkCircleViewTapped() {
+        navigationController?.popViewController(animated: true)
     }
-    */
-
+    
 }

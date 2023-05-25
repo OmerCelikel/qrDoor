@@ -64,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="w0c-LV-nwW">
-                                <rect key="frame" x="40" y="131" width="295" height="230.33333333333337"/>
+                                <rect key="frame" x="40" y="87.000000000000014" width="295" height="230.33333333333337"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wEk-Qk-CHc">
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="50"/>
@@ -453,6 +453,9 @@
                             <constraint firstItem="aGw-qu-aha" firstAttribute="centerX" secondItem="A1I-HB-cs8" secondAttribute="centerX" id="z7X-Zf-4Uh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="xmarkCircleView" destination="glT-0T-y3T" id="RTZ-ag-b6O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEo-YT-Dox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -571,10 +574,9 @@
         <!--Navigation Controller-->
         <scene sceneID="iVZ-BZ-YeA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="96t-Wh-oAA" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="96t-Wh-oAA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="80E-AP-EyQ">
-                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

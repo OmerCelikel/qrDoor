@@ -56,13 +56,16 @@ class LoginViewController: UIViewController {
             }
             else {
                 
-                //let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-                
-                //self.view.window?.rootViewController = homeViewController
-                //self.view.window?.makeKeyAndVisible()
-                let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeViewController
-                
-                self.navigationController?.present(homeViewController, animated: true)
+//                let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+//                
+//                self.view.window?.rootViewController = homeViewController
+//                self.view.window?.makeKeyAndVisible()
+
+                let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as! HomeViewController
+                let navigationController = UINavigationController(rootViewController: homeViewController)
+                navigationController.isNavigationBarHidden = true
+                navigationController.modalPresentationStyle = .fullScreen
+                self.present(navigationController, animated: true, completion: nil)
                 
             }
         }
