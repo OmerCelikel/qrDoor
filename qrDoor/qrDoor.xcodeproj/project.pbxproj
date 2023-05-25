@@ -25,7 +25,7 @@
 		F607975F2A0969B70030CFC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607975E2A0969B70030CFC8 /* Constants.swift */; };
 		F60797622A096C760030CFC8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797612A096C760030CFC8 /* SignUpViewController.swift */; };
 		F60797642A096C800030CFC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797632A096C800030CFC8 /* LoginViewController.swift */; };
-		F60797682A096C910030CFC8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797672A096C910030CFC8 /* StartViewController.swift */; };
+		F62596772A1E4A0500341646 /* QrCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62596762A1E4A0500341646 /* QrCodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +65,7 @@
 		F607975E2A0969B70030CFC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F60797612A096C760030CFC8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F60797632A096C800030CFC8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F60797672A096C910030CFC8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		F607976A2A096DF70030CFC8 /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
+		F62596762A1E4A0500341646 /* QrCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				56A2B4492A0A0C1700432AC7 /* App */,
-				F60797692A096DEE0030CFC8 /* Media */,
 				F60797602A096C520030CFC8 /* ViewControllers */,
+				F60797692A096DEE0030CFC8 /* Media */,
 				F607975B2A0969690030CFC8 /* Helpers */,
 				F60797302A09666B0030CFC8 /* Info.plist */,
 				F60797522A0966AF0030CFC8 /* GoogleService-Info.plist */,
@@ -175,7 +174,7 @@
 				F60797262A09666A0030CFC8 /* HomeViewController.swift */,
 				F60797612A096C760030CFC8 /* SignUpViewController.swift */,
 				F60797632A096C800030CFC8 /* LoginViewController.swift */,
-				F60797672A096C910030CFC8 /* StartViewController.swift */,
+				F62596762A1E4A0500341646 /* QrCodeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -183,7 +182,6 @@
 		F60797692A096DEE0030CFC8 /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				F607976A2A096DF70030CFC8 /* loginbg.mp4 */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -331,11 +329,11 @@
 				F60797642A096C800030CFC8 /* LoginViewController.swift in Sources */,
 				F60797622A096C760030CFC8 /* SignUpViewController.swift in Sources */,
 				F607975F2A0969B70030CFC8 /* Constants.swift in Sources */,
-				F60797682A096C910030CFC8 /* StartViewController.swift in Sources */,
 				56C94CCE2A0E43F9006F0609 /* AddingNewDocument.swift in Sources */,
 				F60797272A09666A0030CFC8 /* HomeViewController.swift in Sources */,
 				F60797232A09666A0030CFC8 /* AppDelegate.swift in Sources */,
 				F607975D2A0969A50030CFC8 /* Utilities.swift in Sources */,
+				F62596772A1E4A0500341646 /* QrCodeViewController.swift in Sources */,
 				F60797252A09666A0030CFC8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

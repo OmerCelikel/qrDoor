@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zgE-iB-Hgg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="96t-Wh-oAA">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -374,18 +374,22 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="announcementsView" destination="Bhl-bu-GAg" id="Um0-uD-5r0"/>
+                        <outlet property="entriesView" destination="b1R-pl-gh7" id="1FY-e2-CdX"/>
+                        <outlet property="menuButton" destination="bDv-7M-XyV" id="uJs-gr-2WY"/>
                         <outlet property="nameSurnameTextLabel" destination="ab6-em-zqw" id="xnB-je-ohS"/>
                         <outlet property="nameTextLabel" destination="jhg-Ic-mJt" id="gum-HV-BBM"/>
+                        <outlet property="qrImageView" destination="LT2-iI-2MF" id="hj7-OD-PAc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1j4-EV-aIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3860" y="270"/>
         </scene>
-        <!--View Controller-->
+        <!--Qr Code View Controller-->
         <scene sceneID="1gI-lT-47V">
             <objects>
-                <viewController id="Wua-Mu-FHw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QrCodeVC" id="Wua-Mu-FHw" customClass="QrCodeViewController" customModule="qrDoor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A1I-HB-cs8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -574,6 +578,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GyI-Xr-8f2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Tfg-Z7-zTf" kind="relationship" relationship="rootViewController" id="RDL-i2-eE6"/>
                     </connections>

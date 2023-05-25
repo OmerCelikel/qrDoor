@@ -13,13 +13,31 @@ import FirebaseFirestore
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var nameSurnameTextLabel: UILabel!
-    
     @IBOutlet weak var nameTextLabel: UILabel!
+    @IBOutlet weak var qrImageView: UIImageView!
+    @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var announcementsView: UIView!
+    @IBOutlet weak var entriesView: UIView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchUserData()
+        
+        // Add tap gesture recognizer to qrImageView
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(openQrCodeViewController))
+        qrImageView.addGestureRecognizer(tapGesture)
+        qrImageView.isUserInteractionEnabled = true
+        modalPresentationStyle = .fullScreen
+//        navigationItem.setHidesBackButton(true, animated: true)
+
     }
+    
+    @objc func openQrCodeViewController() {
+        let qrCodeVC = storyboard?.instantiateViewController(withIdentifier: "QrCodeVC") as! QrCodeViewController
+                navigationController?.pushViewController(qrCodeVC, animated: true)
+        }
     
     func fetchUserData() {
         guard let currentUserID = Auth.auth().currentUser?.uid else {
