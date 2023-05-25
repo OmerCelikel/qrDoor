@@ -1,15 +1,14 @@
 //
-//  QrCodeViewController.swift
+//  MenuViewController.swift
 //  qrDoor
 //
-//  Created by Ömer Oğuz Çelikel on 24.05.2023.
+//  Created by Ömer Oğuz Çelikel on 25.05.2023.
 //
 
 import UIKit
 
-class QrCodeViewController: UIViewController {
-    
-    
+class MenuVC: UIViewController {
+
     @IBOutlet weak var xmarkCircleView: UIImageView!
     
     override func viewDidLoad() {
@@ -21,7 +20,12 @@ class QrCodeViewController: UIViewController {
     }
     
     @objc func xmarkCircleViewTapped() {
-        navigationController?.popViewController(animated: true)
+//        guard let homeVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController else {
+//            return
+//        }
+//        if let navController = navigationController {
+//            navController.popToViewController(homeVC, animated: true)
+//        }
+        self.dismiss(animated: true)
     }
-    
 }

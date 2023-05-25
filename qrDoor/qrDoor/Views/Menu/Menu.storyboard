@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hhu-0C-4wX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MenuVC-->
+        <scene sceneID="jl5-b0-jxE">
+            <objects>
+                <viewController storyboardIdentifier="MenuVC" id="Hhu-0C-4wX" customClass="MenuVC" customModule="qrDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jCd-qe-pYN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJU-bp-x2V">
+                                <rect key="frame" x="20" y="67" width="350" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g1E-8W-N3d">
+                                <rect key="frame" x="10" y="117" width="370" height="623"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="8MS-72-WLu" customClass="MenuItemsTableViewCell" customModule="qrDoor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="370" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8MS-72-WLu" id="rD5-WG-7LC">
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="256" verticalHuggingPriority="251" horizontalCompressionResistancePriority="742" text="App Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RZ-VR-gKi">
+                                                    <rect key="frame" x="30" y="10" width="130.66666666666666" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msQ-sI-y2u">
+                                                    <rect key="frame" x="276.66666666666669" y="10" width="63.333333333333314" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="msQ-sI-y2u" secondAttribute="trailing" constant="10" id="2aF-aF-RHj"/>
+                                                <constraint firstItem="msQ-sI-y2u" firstAttribute="centerY" secondItem="rD5-WG-7LC" secondAttribute="centerY" id="XIF-2k-j41"/>
+                                                <constraint firstItem="4RZ-VR-gKi" firstAttribute="leading" secondItem="rD5-WG-7LC" secondAttribute="leadingMargin" constant="10" id="nA9-TX-M3S"/>
+                                                <constraint firstItem="4RZ-VR-gKi" firstAttribute="centerY" secondItem="rD5-WG-7LC" secondAttribute="centerY" id="xvf-lH-kXk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="menuItemTitle" destination="4RZ-VR-gKi" id="jUR-Ct-hYF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Prz-PF-J1K">
+                                <rect key="frame" x="170" y="751" width="50" height="48.666666666666629"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2kk-PZ-iib"/>
+                                    <constraint firstAttribute="height" constant="50" id="q21-Wr-h69"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Osd-sf-nmQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Prz-PF-J1K" firstAttribute="centerX" secondItem="jCd-qe-pYN" secondAttribute="centerX" id="4pN-D6-7Ki"/>
+                            <constraint firstItem="Osd-sf-nmQ" firstAttribute="trailing" secondItem="g1E-8W-N3d" secondAttribute="trailing" constant="10" id="6CG-rx-ux5"/>
+                            <constraint firstItem="Osd-sf-nmQ" firstAttribute="bottom" secondItem="Prz-PF-J1K" secondAttribute="bottom" constant="10" id="7Ow-ZE-H6V"/>
+                            <constraint firstItem="XJU-bp-x2V" firstAttribute="leading" secondItem="Osd-sf-nmQ" secondAttribute="leading" constant="20" id="Gq7-L7-yYC"/>
+                            <constraint firstItem="Osd-sf-nmQ" firstAttribute="trailing" secondItem="XJU-bp-x2V" secondAttribute="trailing" constant="20" id="SZa-NR-xzJ"/>
+                            <constraint firstItem="g1E-8W-N3d" firstAttribute="top" secondItem="XJU-bp-x2V" secondAttribute="bottom" constant="20" id="bvt-3R-iA6"/>
+                            <constraint firstItem="g1E-8W-N3d" firstAttribute="leading" secondItem="Osd-sf-nmQ" secondAttribute="leading" constant="10" id="diS-kX-FZF"/>
+                            <constraint firstItem="XJU-bp-x2V" firstAttribute="top" secondItem="Osd-sf-nmQ" secondAttribute="top" constant="20" id="kLx-bj-Imy"/>
+                            <constraint firstItem="Prz-PF-J1K" firstAttribute="top" secondItem="g1E-8W-N3d" secondAttribute="bottom" constant="10" id="yeu-tw-KAs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tUj-Ki-dgN"/>
+                    <connections>
+                        <outlet property="xmarkCircleView" destination="Prz-PF-J1K" id="XBb-jN-MWr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngT-is-GwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.15384615384608" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

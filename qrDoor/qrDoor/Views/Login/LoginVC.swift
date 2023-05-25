@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 
-class LoginViewController: UIViewController {
+class LoginVC: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -55,17 +55,14 @@ class LoginViewController: UIViewController {
                 self.errorLabel.alpha = 1
             }
             else {
-                
-//                let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-//                
-//                self.view.window?.rootViewController = homeViewController
-//                self.view.window?.makeKeyAndVisible()
 
-                let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as! HomeViewController
-                let navigationController = UINavigationController(rootViewController: homeViewController)
-                navigationController.isNavigationBarHidden = true
-                navigationController.modalPresentationStyle = .fullScreen
-                self.present(navigationController, animated: true, completion: nil)
+//                let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as! HomeViewController
+//                let navigationController = UINavigationController(rootViewController: homeViewController)
+//                navigationController.isNavigationBarHidden = true
+//                navigationController.modalPresentationStyle = .fullScreen
+//                self.present(navigationController, animated: true, completion: nil)
+                
+                self.present(.home)
                 
             }
         }

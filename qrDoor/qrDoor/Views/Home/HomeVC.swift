@@ -10,7 +10,7 @@ import Firebase
 import FirebaseFirestore
 
 
-class HomeViewController: UIViewController {
+class HomeVC: UIViewController {
 
     @IBOutlet weak var nameSurnameTextLabel: UILabel!
     @IBOutlet weak var nameTextLabel: UILabel!
@@ -33,8 +33,10 @@ class HomeViewController: UIViewController {
     }
     
     @objc func openQrCodeViewController() {
-        let qrCodeVC = storyboard?.instantiateViewController(withIdentifier: "QrCodeVC") as! QrCodeViewController
-                navigationController?.pushViewController(qrCodeVC, animated: true)
+//        let qrCodeVC = storyboard?.instantiateViewController(withIdentifier: "QrCodeVC") as! QrCodeVC
+//                navigationController?.pushViewController(qrCodeVC, animated: true)
+        
+        present(.qrCode)
         }
     
     func fetchUserData() {
@@ -58,6 +60,11 @@ class HomeViewController: UIViewController {
                 print("User document does not exist")
             }
         }
+    }
+    
+    
+    @IBAction func menuButtonTapped(_ sender: Any) {        
+        present(.menu)
     }
 }
 

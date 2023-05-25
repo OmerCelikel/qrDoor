@@ -10,8 +10,7 @@
 		56C94CCE2A0E43F9006F0609 /* AddingNewDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C94CCD2A0E43F9006F0609 /* AddingNewDocument.swift */; };
 		F60797232A09666A0030CFC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797222A09666A0030CFC8 /* AppDelegate.swift */; };
 		F60797252A09666A0030CFC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797242A09666A0030CFC8 /* SceneDelegate.swift */; };
-		F60797272A09666A0030CFC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797262A09666A0030CFC8 /* HomeViewController.swift */; };
-		F607972A2A09666A0030CFC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60797282A09666A0030CFC8 /* Main.storyboard */; };
+		F60797272A09666A0030CFC8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797262A09666A0030CFC8 /* HomeVC.swift */; };
 		F607972C2A09666B0030CFC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F607972B2A09666B0030CFC8 /* Assets.xcassets */; };
 		F607972F2A09666B0030CFC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F607972D2A09666B0030CFC8 /* LaunchScreen.storyboard */; };
 		F607973A2A09666B0030CFC8 /* qrDoorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797392A09666B0030CFC8 /* qrDoorTests.swift */; };
@@ -23,9 +22,17 @@
 		F607975A2A0967AF0030CFC8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F60797592A0967AF0030CFC8 /* FirebaseFirestore */; };
 		F607975D2A0969A50030CFC8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607975C2A0969A50030CFC8 /* Utilities.swift */; };
 		F607975F2A0969B70030CFC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607975E2A0969B70030CFC8 /* Constants.swift */; };
-		F60797622A096C760030CFC8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797612A096C760030CFC8 /* SignUpViewController.swift */; };
-		F60797642A096C800030CFC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797632A096C800030CFC8 /* LoginViewController.swift */; };
-		F62596772A1E4A0500341646 /* QrCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62596762A1E4A0500341646 /* QrCodeViewController.swift */; };
+		F60797622A096C760030CFC8 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797612A096C760030CFC8 /* SignUpVC.swift */; };
+		F60797642A096C800030CFC8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797632A096C800030CFC8 /* LoginVC.swift */; };
+		F62596772A1E4A0500341646 /* QrCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62596762A1E4A0500341646 /* QrCodeVC.swift */; };
+		F635E26C2A1F94AC00D9CA41 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F635E26B2A1F94AB00D9CA41 /* Menu.storyboard */; };
+		F635E2702A1F9ACA00D9CA41 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F635E26F2A1F9ACA00D9CA41 /* SignUp.storyboard */; };
+		F635E2732A1F9B9800D9CA41 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F635E2722A1F9B9800D9CA41 /* Login.storyboard */; };
+		F6A1AEAA2A1F4D32004C6D03 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1AEA92A1F4D32004C6D03 /* MenuVC.swift */; };
+		F6A1AEAE2A1F50B8004C6D03 /* MenuItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1AEAD2A1F50B8004C6D03 /* MenuItemsTableViewCell.swift */; };
+		F6A1AEB02A1F7997004C6D03 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1AEAF2A1F7997004C6D03 /* Router.swift */; };
+		F6A1AEB32A1F7A1D004C6D03 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A1AEB22A1F7A1D004C6D03 /* Home.storyboard */; };
+		F6A1AEB62A1F921B004C6D03 /* QrCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A1AEB52A1F921B004C6D03 /* QrCode.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +57,7 @@
 		F607971F2A09666A0030CFC8 /* qrDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60797222A09666A0030CFC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F60797242A09666A0030CFC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F60797262A09666A0030CFC8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
-		F60797292A09666A0030CFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F60797262A09666A0030CFC8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F607972B2A09666B0030CFC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F607972E2A09666B0030CFC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F60797302A09666B0030CFC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,9 +69,17 @@
 		F60797522A0966AF0030CFC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F607975C2A0969A50030CFC8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		F607975E2A0969B70030CFC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		F60797612A096C760030CFC8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		F60797632A096C800030CFC8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F62596762A1E4A0500341646 /* QrCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeViewController.swift; sourceTree = "<group>"; };
+		F60797612A096C760030CFC8 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		F60797632A096C800030CFC8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F62596762A1E4A0500341646 /* QrCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeVC.swift; sourceTree = "<group>"; };
+		F635E26B2A1F94AB00D9CA41 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		F635E26F2A1F9ACA00D9CA41 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		F635E2722A1F9B9800D9CA41 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F6A1AEA92A1F4D32004C6D03 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		F6A1AEAD2A1F50B8004C6D03 /* MenuItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsTableViewCell.swift; sourceTree = "<group>"; };
+		F6A1AEAF2A1F7997004C6D03 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F6A1AEB22A1F7A1D004C6D03 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F6A1AEB52A1F921B004C6D03 /* QrCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QrCode.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +116,6 @@
 				F60797222A09666A0030CFC8 /* AppDelegate.swift */,
 				F60797242A09666A0030CFC8 /* SceneDelegate.swift */,
 				F607972B2A09666B0030CFC8 /* Assets.xcassets */,
-				F60797282A09666A0030CFC8 /* Main.storyboard */,
 				F607972D2A09666B0030CFC8 /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -132,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				56A2B4492A0A0C1700432AC7 /* App */,
-				F60797602A096C520030CFC8 /* ViewControllers */,
+				F60797602A096C520030CFC8 /* Views */,
 				F60797692A096DEE0030CFC8 /* Media */,
 				F607975B2A0969690030CFC8 /* Helpers */,
 				F60797302A09666B0030CFC8 /* Info.plist */,
@@ -164,19 +177,21 @@
 				F607975C2A0969A50030CFC8 /* Utilities.swift */,
 				F607975E2A0969B70030CFC8 /* Constants.swift */,
 				56C94CCD2A0E43F9006F0609 /* AddingNewDocument.swift */,
+				F6A1AEAF2A1F7997004C6D03 /* Router.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		F60797602A096C520030CFC8 /* ViewControllers */ = {
+		F60797602A096C520030CFC8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F60797262A09666A0030CFC8 /* HomeViewController.swift */,
-				F60797612A096C760030CFC8 /* SignUpViewController.swift */,
-				F60797632A096C800030CFC8 /* LoginViewController.swift */,
-				F62596762A1E4A0500341646 /* QrCodeViewController.swift */,
+				F635E2712A1F9B9200D9CA41 /* Login */,
+				F635E26E2A1F9AB700D9CA41 /* Signup */,
+				F6A1AEB72A1F938A004C6D03 /* Menu */,
+				F6A1AEB42A1F91FE004C6D03 /* QrCode */,
+				F6A1AEB12A1F79DE004C6D03 /* Home */,
 			);
-			path = ViewControllers;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F60797692A096DEE0030CFC8 /* Media */ = {
@@ -184,6 +199,52 @@
 			children = (
 			);
 			path = Media;
+			sourceTree = "<group>";
+		};
+		F635E26E2A1F9AB700D9CA41 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				F60797612A096C760030CFC8 /* SignUpVC.swift */,
+				F635E26F2A1F9ACA00D9CA41 /* SignUp.storyboard */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		F635E2712A1F9B9200D9CA41 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F635E2722A1F9B9800D9CA41 /* Login.storyboard */,
+				F60797632A096C800030CFC8 /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F6A1AEB12A1F79DE004C6D03 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F60797262A09666A0030CFC8 /* HomeVC.swift */,
+				F6A1AEB22A1F7A1D004C6D03 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F6A1AEB42A1F91FE004C6D03 /* QrCode */ = {
+			isa = PBXGroup;
+			children = (
+				F62596762A1E4A0500341646 /* QrCodeVC.swift */,
+				F6A1AEB52A1F921B004C6D03 /* QrCode.storyboard */,
+			);
+			path = QrCode;
+			sourceTree = "<group>";
+		};
+		F6A1AEB72A1F938A004C6D03 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F6A1AEA92A1F4D32004C6D03 /* MenuVC.swift */,
+				F6A1AEAD2A1F50B8004C6D03 /* MenuItemsTableViewCell.swift */,
+				F635E26B2A1F94AB00D9CA41 /* Menu.storyboard */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,10 +359,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A1AEB62A1F921B004C6D03 /* QrCode.storyboard in Resources */,
 				F607972F2A09666B0030CFC8 /* LaunchScreen.storyboard in Resources */,
 				F607972C2A09666B0030CFC8 /* Assets.xcassets in Resources */,
-				F607972A2A09666A0030CFC8 /* Main.storyboard in Resources */,
+				F635E26C2A1F94AC00D9CA41 /* Menu.storyboard in Resources */,
+				F6A1AEB32A1F7A1D004C6D03 /* Home.storyboard in Resources */,
+				F635E2702A1F9ACA00D9CA41 /* SignUp.storyboard in Resources */,
 				F60797532A0966AF0030CFC8 /* GoogleService-Info.plist in Resources */,
+				F635E2732A1F9B9800D9CA41 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,14 +391,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F60797642A096C800030CFC8 /* LoginViewController.swift in Sources */,
-				F60797622A096C760030CFC8 /* SignUpViewController.swift in Sources */,
+				F60797642A096C800030CFC8 /* LoginVC.swift in Sources */,
+				F6A1AEAA2A1F4D32004C6D03 /* MenuVC.swift in Sources */,
+				F60797622A096C760030CFC8 /* SignUpVC.swift in Sources */,
 				F607975F2A0969B70030CFC8 /* Constants.swift in Sources */,
+				F6A1AEB02A1F7997004C6D03 /* Router.swift in Sources */,
 				56C94CCE2A0E43F9006F0609 /* AddingNewDocument.swift in Sources */,
-				F60797272A09666A0030CFC8 /* HomeViewController.swift in Sources */,
+				F60797272A09666A0030CFC8 /* HomeVC.swift in Sources */,
 				F60797232A09666A0030CFC8 /* AppDelegate.swift in Sources */,
 				F607975D2A0969A50030CFC8 /* Utilities.swift in Sources */,
-				F62596772A1E4A0500341646 /* QrCodeViewController.swift in Sources */,
+				F6A1AEAE2A1F50B8004C6D03 /* MenuItemsTableViewCell.swift in Sources */,
+				F62596772A1E4A0500341646 /* QrCodeVC.swift in Sources */,
 				F60797252A09666A0030CFC8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,14 +439,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F60797282A09666A0030CFC8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F60797292A09666A0030CFC8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F607972D2A09666B0030CFC8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -516,9 +576,7 @@
 				INFOPLIST_FILE = qrDoor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,9 +603,7 @@
 				INFOPLIST_FILE = qrDoor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
