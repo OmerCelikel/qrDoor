@@ -28,6 +28,9 @@
 		F635E26C2A1F94AC00D9CA41 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F635E26B2A1F94AB00D9CA41 /* Menu.storyboard */; };
 		F635E2702A1F9ACA00D9CA41 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F635E26F2A1F9ACA00D9CA41 /* SignUp.storyboard */; };
 		F635E2732A1F9B9800D9CA41 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F635E2722A1F9B9800D9CA41 /* Login.storyboard */; };
+		F6747EB52A2F29190064B4DD /* AFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6747EB42A2F29190064B4DD /* AFService.swift */; };
+		F6747EB82A2F2A1C0064B4DD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F6747EB72A2F2A1C0064B4DD /* Alamofire */; };
+		F6747EBB2A2F66FE0064B4DD /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = F6747EBA2A2F66FE0064B4DD /* ProgressHUD */; };
 		F6A1AEAA2A1F4D32004C6D03 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1AEA92A1F4D32004C6D03 /* MenuVC.swift */; };
 		F6A1AEAE2A1F50B8004C6D03 /* MenuItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1AEAD2A1F50B8004C6D03 /* MenuItemsTableViewCell.swift */; };
 		F6A1AEB02A1F7997004C6D03 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1AEAF2A1F7997004C6D03 /* Router.swift */; };
@@ -75,6 +78,7 @@
 		F635E26B2A1F94AB00D9CA41 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		F635E26F2A1F9ACA00D9CA41 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		F635E2722A1F9B9800D9CA41 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F6747EB42A2F29190064B4DD /* AFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFService.swift; sourceTree = "<group>"; };
 		F6A1AEA92A1F4D32004C6D03 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		F6A1AEAD2A1F50B8004C6D03 /* MenuItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsTableViewCell.swift; sourceTree = "<group>"; };
 		F6A1AEAF2A1F7997004C6D03 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -87,7 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6747EBB2A2F66FE0064B4DD /* ProgressHUD in Frameworks */,
 				F60797562A0967AF0030CFC8 /* FirebaseAnalytics in Frameworks */,
+				F6747EB82A2F2A1C0064B4DD /* Alamofire in Frameworks */,
 				F60797582A0967AF0030CFC8 /* FirebaseAuth in Frameworks */,
 				F607975A2A0967AF0030CFC8 /* FirebaseFirestore in Frameworks */,
 			);
@@ -144,6 +150,7 @@
 		F60797212A09666A0030CFC8 /* qrDoor */ = {
 			isa = PBXGroup;
 			children = (
+				F6747EB32A2F29060064B4DD /* Network */,
 				56A2B4492A0A0C1700432AC7 /* App */,
 				F60797602A096C520030CFC8 /* Views */,
 				F60797692A096DEE0030CFC8 /* Media */,
@@ -219,6 +226,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		F6747EB32A2F29060064B4DD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F6747EB42A2F29190064B4DD /* AFService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F6A1AEB12A1F79DE004C6D03 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +282,8 @@
 				F60797552A0967AF0030CFC8 /* FirebaseAnalytics */,
 				F60797572A0967AF0030CFC8 /* FirebaseAuth */,
 				F60797592A0967AF0030CFC8 /* FirebaseFirestore */,
+				F6747EB72A2F2A1C0064B4DD /* Alamofire */,
+				F6747EBA2A2F66FE0064B4DD /* ProgressHUD */,
 			);
 			productName = qrDoor;
 			productReference = F607971F2A09666A0030CFC8 /* qrDoor.app */;
@@ -342,6 +359,8 @@
 			mainGroup = F60797162A09666A0030CFC8;
 			packageReferences = (
 				F60797542A0967AF0030CFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F6747EB62A2F2A1C0064B4DD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F6747EB92A2F66FE0064B4DD /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = F60797202A09666A0030CFC8 /* Products */;
 			projectDirPath = "";
@@ -391,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6747EB52A2F29190064B4DD /* AFService.swift in Sources */,
 				F60797642A096C800030CFC8 /* LoginVC.swift in Sources */,
 				F6A1AEAA2A1F4D32004C6D03 /* MenuVC.swift in Sources */,
 				F60797622A096C760030CFC8 /* SignUpVC.swift in Sources */,
@@ -744,6 +764,22 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		F6747EB62A2F2A1C0064B4DD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F6747EB92A2F66FE0064B4DD /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -761,6 +797,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F60797542A0967AF0030CFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		F6747EB72A2F2A1C0064B4DD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6747EB62A2F2A1C0064B4DD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F6747EBA2A2F66FE0064B4DD /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6747EB92A2F66FE0064B4DD /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

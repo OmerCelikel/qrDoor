@@ -14,10 +14,7 @@ enum Page {
     case home
     case qrCode
     case menu
-    
-
     //case howToUse(_ state: HowToUseState)
-   
 }
 
 class Router {
@@ -62,7 +59,6 @@ class Router {
         }
         return UIViewController()
     }
-    
 }
 
 extension UIViewController {

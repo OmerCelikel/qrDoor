@@ -11,7 +11,7 @@ import FirebaseFirestore
 
 
 class HomeVC: UIViewController {
-
+    
     @IBOutlet weak var nameSurnameTextLabel: UILabel!
     @IBOutlet weak var nameTextLabel: UILabel!
     @IBOutlet weak var qrImageView: UIImageView!
@@ -29,22 +29,18 @@ class HomeVC: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(openQrCodeViewController))
         qrImageView.addGestureRecognizer(tapGesture)
         qrImageView.isUserInteractionEnabled = true
-
     }
     
     @objc func openQrCodeViewController() {
-//        let qrCodeVC = storyboard?.instantiateViewController(withIdentifier: "QrCodeVC") as! QrCodeVC
-//                navigationController?.pushViewController(qrCodeVC, animated: true)
-        
         present(.qrCode)
-        }
+    }
     
     func fetchUserData() {
         guard let currentUserID = Auth.auth().currentUser?.uid else {
             // User is not logged in or user ID not available
             return
         }
-        print("currentUserID \(currentUserID)")
+
         let db = Firestore.firestore()
         let userRef = db.collection("users").document(currentUserID)
         
@@ -52,7 +48,7 @@ class HomeVC: UIViewController {
             if let document = document, document.exists {
                 let data = document.data()
                 if let firstName = data?["firstname"] as? String,
-                    let lastName = data?["lastname"] as? String {
+                   let lastName = data?["lastname"] as? String {
                     self.nameSurnameTextLabel.text = "\(firstName) \(lastName)"
                     self.nameTextLabel.text = "\(firstName)"
                 }
@@ -63,7 +59,7 @@ class HomeVC: UIViewController {
     }
     
     
-    @IBAction func menuButtonTapped(_ sender: Any) {        
+    @IBAction func menuButtonTapped(_ sender: Any) {
         present(.menu)
     }
 }
