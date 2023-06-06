@@ -17,14 +17,10 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
         setUpElements()
     }
     
     func setUpElements() {
-        
         // Hide the error label
         errorLabel.alpha = 0
         
@@ -32,15 +28,9 @@ class LoginVC: UIViewController {
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(loginButton)
-        
     }
     
-    
-    
-    
     @IBAction func loginTapped(_ sender: Any) {
-        
-        // TODO: Validate Text Fields
         
         // Create cleaned versions of the text field
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -55,13 +45,6 @@ class LoginVC: UIViewController {
                 self.errorLabel.alpha = 1
             }
             else {
-
-//                let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as! HomeViewController
-//                let navigationController = UINavigationController(rootViewController: homeViewController)
-//                navigationController.isNavigationBarHidden = true
-//                navigationController.modalPresentationStyle = .fullScreen
-//                self.present(navigationController, animated: true, completion: nil)
-                
                 self.present(.home)
                 
             }

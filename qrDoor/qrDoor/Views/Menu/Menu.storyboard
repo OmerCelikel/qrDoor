@@ -27,7 +27,7 @@
                                 <rect key="frame" x="10" y="117" width="370" height="623"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="8MS-72-WLu" customClass="MenuItemsTableViewCell" customModule="qrDoor" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuItemsTableViewCell" id="8MS-72-WLu" customClass="MenuItemsTableViewCell" customModule="qrDoor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="370" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8MS-72-WLu" id="rD5-WG-7LC">
@@ -55,10 +55,15 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="menuItemTitle" destination="4RZ-VR-gKi" id="jUR-Ct-hYF"/>
+                                            <outlet property="detailLabel" destination="msQ-sI-y2u" id="9Kh-nR-ngh"/>
+                                            <outlet property="menuItemTitle" destination="4RZ-VR-gKi" id="FaY-dS-rMu"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Hhu-0C-4wX" id="T55-OJ-JGA"/>
+                                    <outlet property="delegate" destination="Hhu-0C-4wX" id="9oO-OP-gTb"/>
+                                </connections>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Prz-PF-J1K">
                                 <rect key="frame" x="170" y="751" width="50" height="48.666666666666629"/>
@@ -85,6 +90,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="tUj-Ki-dgN"/>
                     <connections>
+                        <outlet property="tableView" destination="g1E-8W-N3d" id="xih-V4-gRh"/>
                         <outlet property="xmarkCircleView" destination="Prz-PF-J1K" id="XBb-jN-MWr"/>
                     </connections>
                 </viewController>
