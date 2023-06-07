@@ -32,8 +32,8 @@
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hBe-B3-oG5">
-                                <rect key="frame" x="75" y="253.66666666666663" width="240" height="237"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hBe-B3-oG5">
+                                <rect key="frame" x="75" y="252" width="240" height="240"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="8Uf-jD-TVH"/>
@@ -80,6 +80,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressBar" destination="SMp-ZQ-4Md" id="il1-BJ-2iO"/>
+                        <outlet property="qrCodeImage" destination="hBe-B3-oG5" id="ZK0-oW-quZ"/>
+                        <outlet property="remainingTimeLabel" destination="4oI-JF-VN6" id="H7H-fF-AWT"/>
                         <outlet property="xmarkCircleView" destination="h0r-IX-XN9" id="DRD-3G-fAT"/>
                     </connections>
                 </viewController>
@@ -200,7 +203,6 @@
     </scenes>
     <resources>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="qrcode" catalog="system" width="128" height="114"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
