@@ -20,7 +20,7 @@ class QrCodeVC: UIViewController {
     
     let qrService = AFQrService()
     var timer: Timer?
-    var remainingTime: Int = 30
+    var remainingTime: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,9 +54,10 @@ class QrCodeVC: UIViewController {
     }
     
     @objc func updateTime() {
-        remainingTime -= 1
+        self.remainingTime = secondsRemainingToNextBlock()
+        remainingTime! -= 1
         
-        if remainingTime <= 0 {
+        if remainingTime ?? 10 <= 0 {
             stopTimer()
             resetQRCode()
         }
@@ -66,23 +67,37 @@ class QrCodeVC: UIViewController {
     }
     
     func updateProgressBar() {
-        let progress = Float(remainingTime) / 30.0
+        let progress = Float(remainingTime ?? 10) / 30.0
         progressBar.progress = progress
     }
     
     func updateRemainingTimeLabel() {
-        remainingTimeLabel.text = "\(remainingTime) seconds"
+        if let remainingTime = remainingTime {
+            remainingTimeLabel.text = "\(remainingTime) seconds"
+        } else {
+            remainingTimeLabel.text = "0 seconds" // Or any default value you want to display
+        }
     }
     
     func resetQRCode() {
-        remainingTime = 30
+        remainingTime = secondsRemainingToNextBlock()
         updateProgressBar()
         updateRemainingTimeLabel()
         progressBar.setProgress(1.0, animated: true) // Set progress to 100%
         ProgressHUD.show()
-        
+
         let currentUserID = fetchUserData()
-        getQrStringAPI(currentUserID: currentUserID)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+            // Remove previous image
+            self?.qrCodeImage.image = nil
+            
+            // Delay the network request for a few seconds
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
+                self?.getQrStringAPI(currentUserID: currentUserID)
+                self?.startTimer()
+            }
+        }
     }
     
     @objc func xmarkCircleViewTapped() {
@@ -99,38 +114,36 @@ class QrCodeVC: UIViewController {
     }
     
     func getQrStringAPI(currentUserID: String) {
-        qrService.getQrString(string: currentUserID) { result in
-            
-            switch result {
-            case .success(let qrResponse):
-                print("QR String: \(qrResponse.qr_string)")
-                self.generateQRCode(qrString: qrResponse.qr_string)
+            qrService.getQrString(string: currentUserID) { result in
                 
-            case .failure(let error):
-                print("Error: \(error)")
-                ProgressHUD.dismiss()
+                switch result {
+                case .success(let qrResponse):
+                    print("QR String: \(qrResponse.qr_string)")
+                    self.generateQRCode(qrString: qrResponse.qr_string)
+                    
+                case .failure(let error):
+                    print("Error: \(error)")
+                    ProgressHUD.dismiss()
+                }
             }
         }
-    }
-    
+        
     func generateQRCode(qrString: String) {
         if let qrCodeData = qrString.data(using: String.Encoding.ascii) {
             if let qrCodeFilter = CIFilter(name: "CIQRCodeGenerator") {
                 qrCodeFilter.setValue(qrCodeData, forKey: "inputMessage")
                 if let qrCodeImage = qrCodeFilter.outputImage {
-                    let transform = CGAffineTransform(scaleX: 10, y: 10) // Adjust the scale as per your needs
+                    let transform = CGAffineTransform(scaleX: 10, y: 10)
                     let scaledQrCodeImage = qrCodeImage.transformed(by: transform)
-                    let qrCodeUIImage = UIImage(ciImage: scaledQrCodeImage)
-                    DispatchQueue.main.async { [weak self] in
-                        self?.qrCodeImage.image = qrCodeUIImage
-                    }
                     
-                    // Convert CIImage to CGImage
                     let context = CIContext()
                     if let cgImage = context.createCGImage(scaledQrCodeImage, from: scaledQrCodeImage.extent) {
                         let qrCodeUIImg = UIImage(cgImage: cgImage)
-                        // Print the generated QR code image
-                        print(qrCodeUIImg)
+                        
+                        DispatchQueue.main.async { [weak self] in
+                            self?.qrCodeImage.image = qrCodeUIImg
+                            self?.qrCodeImage.contentMode = .scaleAspectFit
+                        }
                     }
                 }
             }
@@ -138,5 +151,16 @@ class QrCodeVC: UIViewController {
         ProgressHUD.dismiss()
     }
 
+
+        func secondsRemainingToNextBlock() -> Int {
+            let calendar = Calendar.current
+            let components = calendar.dateComponents([.second], from: Date())
+            
+            if let seconds = components.second {
+                let remainingSeconds = 30 - (seconds % 30)
+                return remainingSeconds
+            }
+            return 10
+        }
 }
 

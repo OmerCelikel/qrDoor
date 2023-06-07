@@ -23,17 +23,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SMp-ZQ-4Md">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SMp-ZQ-4Md">
                                 <rect key="frame" x="30" y="147" width="330" height="4"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining time: 1sc." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oI-JF-VN6">
-                                <rect key="frame" x="117.33333333333333" y="181" width="155.66666666666669" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oI-JF-VN6">
+                                <rect key="frame" x="195" y="181" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hBe-B3-oG5">
-                                <rect key="frame" x="75" y="252" width="240" height="240"/>
+                                <rect key="frame" x="75" y="231" width="240" height="240"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="8Uf-jD-TVH"/>
@@ -90,119 +90,8 @@
             </objects>
             <point key="canvasLocation" x="4674" y="270"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="zAU-9p-13F">
-            <objects>
-                <viewController id="7rc-8z-evd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YwD-nf-qvX">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFN-5U-wol">
-                                <rect key="frame" x="129" y="67" width="132" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successful Pass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAj-3c-dKb">
-                                <rect key="frame" x="103.00000000000001" y="497" width="184.33333333333337" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Oby-P4-G10">
-                                <rect key="frame" x="75" y="198" width="240" height="238.66666666666669"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="vQn-ar-v7y"/>
-                                    <constraint firstAttribute="width" constant="240" id="yxQ-JL-DF0"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IeD-pP-wL3">
-                                <rect key="frame" x="170" y="785" width="50" height="48.666666666666629"/>
-                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Ku9-4J-b2V"/>
-                                    <constraint firstAttribute="height" constant="50" id="r64-uH-HLO"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="cwd-0r-99T"/>
-                        <color key="backgroundColor" red="0.6571065801" green="0.8865812542" blue="0.743909398" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="iAj-3c-dKb" firstAttribute="centerX" secondItem="YwD-nf-qvX" secondAttribute="centerX" id="7bl-Z1-tJJ"/>
-                            <constraint firstItem="pFN-5U-wol" firstAttribute="top" secondItem="cwd-0r-99T" secondAttribute="top" constant="20" id="Hod-6S-0EH"/>
-                            <constraint firstItem="pFN-5U-wol" firstAttribute="centerX" secondItem="YwD-nf-qvX" secondAttribute="centerX" id="ZQ7-K9-JCI"/>
-                            <constraint firstItem="Oby-P4-G10" firstAttribute="centerX" secondItem="YwD-nf-qvX" secondAttribute="centerX" id="ffW-OK-Efa"/>
-                            <constraint firstItem="IeD-pP-wL3" firstAttribute="centerX" secondItem="YwD-nf-qvX" secondAttribute="centerX" id="h0c-87-qyU"/>
-                            <constraint firstItem="Oby-P4-G10" firstAttribute="top" secondItem="pFN-5U-wol" secondAttribute="bottom" constant="100" id="qHd-ch-KWD"/>
-                            <constraint firstAttribute="bottom" secondItem="IeD-pP-wL3" secondAttribute="bottom" constant="10" id="tBP-vy-vs4"/>
-                            <constraint firstItem="iAj-3c-dKb" firstAttribute="top" secondItem="Oby-P4-G10" secondAttribute="bottom" constant="60" id="w5F-Xr-jqX"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FAl-xK-9so" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5498" y="610"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="LEI-1g-FiB">
-            <objects>
-                <viewController id="xVI-eQ-4Mf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mF6-XI-6se">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjr-Ly-RiC">
-                                <rect key="frame" x="129" y="67" width="132" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unsuccessful Pass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lim-sV-jbH">
-                                <rect key="frame" x="88.333333333333329" y="497" width="213.33333333333337" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bUm-kF-P7C">
-                                <rect key="frame" x="75" y="198" width="240" height="238.66666666666669"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="Z5b-zI-WTy"/>
-                                    <constraint firstAttribute="width" constant="240" id="nia-5M-hHg"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Sfw-TR-MsJ">
-                                <rect key="frame" x="170" y="785" width="50" height="48.666666666666629"/>
-                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ZWF-MO-WIM"/>
-                                    <constraint firstAttribute="width" constant="50" id="oLk-lE-roq"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="KI4-pY-U2G"/>
-                        <color key="backgroundColor" red="0.8865812542" green="0.42743062739999999" blue="0.4616333058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="bUm-kF-P7C" firstAttribute="centerX" secondItem="mF6-XI-6se" secondAttribute="centerX" id="DEg-BM-qgV"/>
-                            <constraint firstItem="vjr-Ly-RiC" firstAttribute="top" secondItem="KI4-pY-U2G" secondAttribute="top" constant="20" id="Mzi-cG-vch"/>
-                            <constraint firstItem="bUm-kF-P7C" firstAttribute="top" secondItem="vjr-Ly-RiC" secondAttribute="bottom" constant="100" id="T9w-Ox-nB4"/>
-                            <constraint firstItem="vjr-Ly-RiC" firstAttribute="centerX" secondItem="mF6-XI-6se" secondAttribute="centerX" id="Tys-3d-tlW"/>
-                            <constraint firstItem="Sfw-TR-MsJ" firstAttribute="centerX" secondItem="mF6-XI-6se" secondAttribute="centerX" id="gIV-rQ-IjW"/>
-                            <constraint firstAttribute="bottom" secondItem="Sfw-TR-MsJ" secondAttribute="bottom" constant="10" id="oAQ-4a-2lU"/>
-                            <constraint firstItem="Lim-sV-jbH" firstAttribute="centerX" secondItem="mF6-XI-6se" secondAttribute="centerX" id="qgq-my-rbD"/>
-                            <constraint firstItem="Lim-sV-jbH" firstAttribute="top" secondItem="bUm-kF-P7C" secondAttribute="bottom" constant="60" id="rHp-et-zDC"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="foa-YM-6gR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5497" y="-127"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

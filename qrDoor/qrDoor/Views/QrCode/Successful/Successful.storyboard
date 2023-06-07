@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n1i-J6-zac">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SuccessfulVC-->
+        <scene sceneID="7Oy-eh-4Zn">
+            <objects>
+                <viewController storyboardIdentifier="SuccessfulVC" id="n1i-J6-zac" customClass="SuccessfulVC" customModule="qrDoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4o0-R6-jHw">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYR-Ml-dIO">
+                                <rect key="frame" x="129" y="67" width="132" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successful Pass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQy-pj-tHc">
+                                <rect key="frame" x="103.00000000000001" y="497" width="184.33333333333337" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SR4-jU-ERE">
+                                <rect key="frame" x="75" y="198" width="240" height="238.66666666666669"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="8Ag-3D-xeF"/>
+                                    <constraint firstAttribute="height" constant="240" id="RUJ-FK-ERN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YgF-kK-b5f">
+                                <rect key="frame" x="170" y="785" width="50" height="48.666666666666629"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="30A-Tj-uYQ"/>
+                                    <constraint firstAttribute="width" constant="50" id="9u8-fM-UMJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lba-vj-WHv"/>
+                        <color key="backgroundColor" red="0.6571065801" green="0.8865812542" blue="0.743909398" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="TYR-Ml-dIO" firstAttribute="top" secondItem="lba-vj-WHv" secondAttribute="top" constant="20" id="Ey8-ae-Ecy"/>
+                            <constraint firstItem="TYR-Ml-dIO" firstAttribute="centerX" secondItem="4o0-R6-jHw" secondAttribute="centerX" id="U2v-C2-Nrf"/>
+                            <constraint firstItem="YgF-kK-b5f" firstAttribute="centerX" secondItem="4o0-R6-jHw" secondAttribute="centerX" id="dBY-3t-SZ8"/>
+                            <constraint firstItem="OQy-pj-tHc" firstAttribute="top" secondItem="SR4-jU-ERE" secondAttribute="bottom" constant="60" id="diK-e0-ToD"/>
+                            <constraint firstItem="OQy-pj-tHc" firstAttribute="centerX" secondItem="4o0-R6-jHw" secondAttribute="centerX" id="hLI-Lc-1eM"/>
+                            <constraint firstItem="SR4-jU-ERE" firstAttribute="top" secondItem="TYR-Ml-dIO" secondAttribute="bottom" constant="100" id="he9-MQ-fw5"/>
+                            <constraint firstItem="SR4-jU-ERE" firstAttribute="centerX" secondItem="4o0-R6-jHw" secondAttribute="centerX" id="mMI-VU-MQu"/>
+                            <constraint firstAttribute="bottom" secondItem="YgF-kK-b5f" secondAttribute="bottom" constant="10" id="ygb-p1-DNr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8w5-AU-6m4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5498" y="610"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
