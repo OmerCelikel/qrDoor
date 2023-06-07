@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UnseccessfulVC: UIViewController {
+class UnsuccessfulVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -30,8 +30,8 @@
 		F635E2732A1F9B9800D9CA41 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F635E2722A1F9B9800D9CA41 /* Login.storyboard */; };
 		F64F6E332A309E760001691D /* SuccessfulVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F6E322A309E760001691D /* SuccessfulVC.swift */; };
 		F64F6E352A309E8F0001691D /* Successful.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64F6E342A309E8F0001691D /* Successful.storyboard */; };
-		F64F6E382A309EDF0001691D /* Unseccessful.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64F6E372A309EDF0001691D /* Unseccessful.storyboard */; };
-		F64F6E3A2A309EEB0001691D /* UnseccessfulVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F6E392A309EEB0001691D /* UnseccessfulVC.swift */; };
+		F64F6E382A309EDF0001691D /* Unsuccessful.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64F6E372A309EDF0001691D /* Unsuccessful.storyboard */; };
+		F64F6E3A2A309EEB0001691D /* UnsuccessfulVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F6E392A309EEB0001691D /* UnsuccessfulVC.swift */; };
 		F6747EB52A2F29190064B4DD /* AFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6747EB42A2F29190064B4DD /* AFService.swift */; };
 		F6747EB82A2F2A1C0064B4DD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F6747EB72A2F2A1C0064B4DD /* Alamofire */; };
 		F6747EBB2A2F66FE0064B4DD /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = F6747EBA2A2F66FE0064B4DD /* ProgressHUD */; };
@@ -84,8 +84,8 @@
 		F635E2722A1F9B9800D9CA41 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F64F6E322A309E760001691D /* SuccessfulVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulVC.swift; sourceTree = "<group>"; };
 		F64F6E342A309E8F0001691D /* Successful.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Successful.storyboard; sourceTree = "<group>"; };
-		F64F6E372A309EDF0001691D /* Unseccessful.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Unseccessful.storyboard; sourceTree = "<group>"; };
-		F64F6E392A309EEB0001691D /* UnseccessfulVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnseccessfulVC.swift; sourceTree = "<group>"; };
+		F64F6E372A309EDF0001691D /* Unsuccessful.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Unsuccessful.storyboard; sourceTree = "<group>"; };
+		F64F6E392A309EEB0001691D /* UnsuccessfulVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsuccessfulVC.swift; sourceTree = "<group>"; };
 		F6747EB42A2F29190064B4DD /* AFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFService.swift; sourceTree = "<group>"; };
 		F6747EBC2A2F76600064B4DD /* MenuItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsTableViewCell.swift; sourceTree = "<group>"; };
 		F6A1AEA92A1F4D32004C6D03 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
@@ -246,8 +246,8 @@
 		F64F6E362A309ECF0001691D /* Unseccessful */ = {
 			isa = PBXGroup;
 			children = (
-				F64F6E372A309EDF0001691D /* Unseccessful.storyboard */,
-				F64F6E392A309EEB0001691D /* UnseccessfulVC.swift */,
+				F64F6E372A309EDF0001691D /* Unsuccessful.storyboard */,
+				F64F6E392A309EEB0001691D /* UnsuccessfulVC.swift */,
 			);
 			path = Unseccessful;
 			sourceTree = "<group>";
@@ -407,7 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A1AEB62A1F921B004C6D03 /* QrCode.storyboard in Resources */,
-				F64F6E382A309EDF0001691D /* Unseccessful.storyboard in Resources */,
+				F64F6E382A309EDF0001691D /* Unsuccessful.storyboard in Resources */,
 				F64F6E352A309E8F0001691D /* Successful.storyboard in Resources */,
 				F607972F2A09666B0030CFC8 /* LaunchScreen.storyboard in Resources */,
 				F607972C2A09666B0030CFC8 /* Assets.xcassets in Resources */,
@@ -445,7 +445,7 @@
 				F64F6E332A309E760001691D /* SuccessfulVC.swift in Sources */,
 				F6A1AEAA2A1F4D32004C6D03 /* MenuVC.swift in Sources */,
 				F60797622A096C760030CFC8 /* SignUpVC.swift in Sources */,
-				F64F6E3A2A309EEB0001691D /* UnseccessfulVC.swift in Sources */,
+				F64F6E3A2A309EEB0001691D /* UnsuccessfulVC.swift in Sources */,
 				F607975F2A0969B70030CFC8 /* Constants.swift in Sources */,
 				F6747EBD2A2F76600064B4DD /* MenuItemsTableViewCell.swift in Sources */,
 				F6A1AEB02A1F7997004C6D03 /* Router.swift in Sources */,
