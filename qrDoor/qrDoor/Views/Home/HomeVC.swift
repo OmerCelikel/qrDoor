@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
-
+import ProgressHUD
 
 class HomeVC: UIViewController {
     
@@ -41,10 +41,14 @@ class HomeVC: UIViewController {
             return
         }
 
+        ProgressHUD.show()
+        
         let db = Firestore.firestore()
         let userRef = db.collection("users").document(currentUserID)
         
         userRef.getDocument { (document, error) in
+            ProgressHUD.dismiss()
+            
             if let document = document, document.exists {
                 let data = document.data()
                 if let firstName = data?["firstname"] as? String,
