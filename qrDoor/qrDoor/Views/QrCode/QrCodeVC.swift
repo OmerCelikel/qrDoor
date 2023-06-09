@@ -12,7 +12,7 @@ import ProgressHUD
 import CoreImage
 
 class QrCodeVC: UIViewController {
-        
+    
     @IBOutlet weak var xmarkCircleView: UIImageView!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var remainingTimeLabel: UILabel!
@@ -64,6 +64,7 @@ class QrCodeVC: UIViewController {
         
         updateProgressBar()
         updateRemainingTimeLabel()
+        getValidatedUser(currentUserID: fetchUserData())
     }
     
     func updateProgressBar() {
@@ -85,9 +86,9 @@ class QrCodeVC: UIViewController {
         updateRemainingTimeLabel()
         progressBar.setProgress(1.0, animated: true) // Set progress to 100%
         ProgressHUD.show()
-
+        
         let currentUserID = fetchUserData()
-
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             // Remove previous image
             self?.qrCodeImage.image = nil
@@ -114,20 +115,20 @@ class QrCodeVC: UIViewController {
     }
     
     func getQrStringAPI(currentUserID: String) {
-            qrService.getQrString(string: currentUserID) { result in
+        qrService.getQrString(string: currentUserID) { result in
+            
+            switch result {
+            case .success(let qrResponse):
+                print("QR String: \(qrResponse.qr_string)")
+                self.generateQRCode(qrString: qrResponse.qr_string!)
                 
-                switch result {
-                case .success(let qrResponse):
-                    print("QR String: \(qrResponse.qr_string)")
-                    self.generateQRCode(qrString: qrResponse.qr_string)
-                    
-                case .failure(let error):
-                    print("Error: \(error)")
-                    ProgressHUD.dismiss()
-                }
+            case .failure(let error):
+                print("Error: \(error)")
+                ProgressHUD.dismiss()
             }
         }
-        
+    }
+    
     func generateQRCode(qrString: String) {
         if let qrCodeData = qrString.data(using: String.Encoding.ascii) {
             if let qrCodeFilter = CIFilter(name: "CIQRCodeGenerator") {
@@ -150,17 +151,36 @@ class QrCodeVC: UIViewController {
         }
         ProgressHUD.dismiss()
     }
-
-
-        func secondsRemainingToNextBlock() -> Int {
-            let calendar = Calendar.current
-            let components = calendar.dateComponents([.second], from: Date())
-            
-            if let seconds = components.second {
-                let remainingSeconds = 30 - (seconds % 30)
-                return remainingSeconds
-            }
-            return 10
+    
+    
+    func secondsRemainingToNextBlock() -> Int {
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.second], from: Date())
+        
+        if let seconds = components.second {
+            let remainingSeconds = 30 - (seconds % 30)
+            return remainingSeconds
         }
+        return 10
+    }
+    
+    func getValidatedUser(currentUserID: String) {
+        qrService.getValidated(userId: currentUserID) { result in
+            switch result {
+            case .success(let isValidResponse):
+                if let validation = isValidResponse.validation, validation {
+                    // valid
+                    DispatchQueue.main.async { [weak self] in
+                        // Navigate to another screen
+                        self!.present(.successful)
+                    }
+                } else {
+                    // invalif
+                }
+            case .failure(let error):
+                print("Error: \(error)")
+            }
+        }
+    }
 }
 

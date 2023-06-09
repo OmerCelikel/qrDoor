@@ -9,7 +9,11 @@ import Foundation
 import Alamofire
 
 struct QrResponse: Codable {
-    let qr_string: String
+    let qr_string: String?
+}
+
+struct IsValidResponse: Codable {
+    let validation: Bool?
 }
 
 class AFQrService {
@@ -21,6 +25,18 @@ class AFQrService {
             switch response.result {
             case .success(let qrResponse):
                 completion(.success(qrResponse))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+    
+    func getValidated(userId: String, completion: @escaping (Result<IsValidResponse, Error>) -> Void) {
+        let urlString = "\(baseURL)/isvalid/\(userId)"
+        AF.request(urlString).validate().responseDecodable(of: IsValidResponse.self) { response in
+            switch response.result {
+            case .success(let isValidResult):
+                completion(.success(isValidResult))
             case .failure(let error):
                 completion(.failure(error))
             }

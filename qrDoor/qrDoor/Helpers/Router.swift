@@ -14,6 +14,7 @@ enum Page {
     case home
     case qrCode
     case menu
+    case successful
     //case howToUse(_ state: HowToUseState)
 }
 
@@ -26,7 +27,12 @@ class Router {
 //            vc.modalTransitionStyle = .crossDissolve
 //            vc.modalPresentationStyle = .fullScreen
 //            return vc
-
+            
+        case .login:
+            let vc = LoginVC.instantiate()
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .fullScreen
+            return vc
         case .home:
             let vc = HomeVC.instantiate()
             vc.modalTransitionStyle = .crossDissolve
@@ -42,11 +48,12 @@ class Router {
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .fullScreen
             return vc
-        case .login:
-            let vc = LoginVC.instantiate()
+        case .successful:
+            let vc = SuccessfulVC.instantiate()
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .fullScreen
             return vc
+        
         
 //        case .howToUse(let state):
 //            let vc = HowToUseVC.instantiate()
