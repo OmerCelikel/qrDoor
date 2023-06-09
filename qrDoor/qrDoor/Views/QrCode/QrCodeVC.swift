@@ -110,7 +110,6 @@ class QrCodeVC: UIViewController {
             // User is not logged in or user ID not available
             return ""
         }
-        print("currentUserID \(currentUserID)")
         return currentUserID
     }
     
@@ -172,6 +171,7 @@ class QrCodeVC: UIViewController {
                     // valid
                     DispatchQueue.main.async { [weak self] in
                         // Navigate to another screen
+                        self!.stopTimer()
                         self!.present(.successful)
                     }
                 } else {

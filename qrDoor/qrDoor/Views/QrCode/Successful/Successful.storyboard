@@ -58,6 +58,9 @@
                             <constraint firstAttribute="bottom" secondItem="YgF-kK-b5f" secondAttribute="bottom" constant="10" id="ygb-p1-DNr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="xmarkCircleView" destination="YgF-kK-b5f" id="83g-Ge-c69"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8w5-AU-6m4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
