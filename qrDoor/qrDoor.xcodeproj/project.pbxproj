@@ -17,9 +17,6 @@
 		F60797442A09666B0030CFC8 /* qrDoorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797432A09666B0030CFC8 /* qrDoorUITests.swift */; };
 		F60797462A09666B0030CFC8 /* qrDoorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797452A09666B0030CFC8 /* qrDoorUITestsLaunchTests.swift */; };
 		F60797532A0966AF0030CFC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F60797522A0966AF0030CFC8 /* GoogleService-Info.plist */; };
-		F60797562A0967AF0030CFC8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F60797552A0967AF0030CFC8 /* FirebaseAnalytics */; };
-		F60797582A0967AF0030CFC8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F60797572A0967AF0030CFC8 /* FirebaseAuth */; };
-		F607975A2A0967AF0030CFC8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F60797592A0967AF0030CFC8 /* FirebaseFirestore */; };
 		F607975D2A0969A50030CFC8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607975C2A0969A50030CFC8 /* Utilities.swift */; };
 		F607975F2A0969B70030CFC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F607975E2A0969B70030CFC8 /* Constants.swift */; };
 		F60797622A096C760030CFC8 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60797612A096C760030CFC8 /* SignUpVC.swift */; };
@@ -32,9 +29,12 @@
 		F64F6E352A309E8F0001691D /* Successful.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64F6E342A309E8F0001691D /* Successful.storyboard */; };
 		F64F6E382A309EDF0001691D /* Unsuccessful.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64F6E372A309EDF0001691D /* Unsuccessful.storyboard */; };
 		F64F6E3A2A309EEB0001691D /* UnsuccessfulVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F6E392A309EEB0001691D /* UnsuccessfulVC.swift */; };
+		F6581AD82A35E2E400C5D257 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = F6581AD72A35E2E400C5D257 /* ProgressHUD */; };
+		F6581ADB2A35E30600C5D257 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F6581ADA2A35E30600C5D257 /* Alamofire */; };
+		F6581ADE2A35E35F00C5D257 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F6581ADD2A35E35F00C5D257 /* FirebaseAnalytics */; };
+		F6581AE02A35E35F00C5D257 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F6581ADF2A35E35F00C5D257 /* FirebaseAuth */; };
+		F6581AE22A35E35F00C5D257 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F6581AE12A35E35F00C5D257 /* FirebaseFirestore */; };
 		F6747EB52A2F29190064B4DD /* AFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6747EB42A2F29190064B4DD /* AFService.swift */; };
-		F6747EB82A2F2A1C0064B4DD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F6747EB72A2F2A1C0064B4DD /* Alamofire */; };
-		F6747EBB2A2F66FE0064B4DD /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = F6747EBA2A2F66FE0064B4DD /* ProgressHUD */; };
 		F6747EBD2A2F76600064B4DD /* MenuItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6747EBC2A2F76600064B4DD /* MenuItemsTableViewCell.swift */; };
 		F6A1AEAA2A1F4D32004C6D03 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1AEA92A1F4D32004C6D03 /* MenuVC.swift */; };
 		F6A1AEB02A1F7997004C6D03 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A1AEAF2A1F7997004C6D03 /* Router.swift */; };
@@ -99,11 +99,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6747EBB2A2F66FE0064B4DD /* ProgressHUD in Frameworks */,
-				F60797562A0967AF0030CFC8 /* FirebaseAnalytics in Frameworks */,
-				F6747EB82A2F2A1C0064B4DD /* Alamofire in Frameworks */,
-				F60797582A0967AF0030CFC8 /* FirebaseAuth in Frameworks */,
-				F607975A2A0967AF0030CFC8 /* FirebaseFirestore in Frameworks */,
+				F6581AD82A35E2E400C5D257 /* ProgressHUD in Frameworks */,
+				F6581ADB2A35E30600C5D257 /* Alamofire in Frameworks */,
+				F6581ADE2A35E35F00C5D257 /* FirebaseAnalytics in Frameworks */,
+				F6581AE22A35E35F00C5D257 /* FirebaseFirestore in Frameworks */,
+				F6581AE02A35E35F00C5D257 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,11 +307,11 @@
 			);
 			name = qrDoor;
 			packageProductDependencies = (
-				F60797552A0967AF0030CFC8 /* FirebaseAnalytics */,
-				F60797572A0967AF0030CFC8 /* FirebaseAuth */,
-				F60797592A0967AF0030CFC8 /* FirebaseFirestore */,
-				F6747EB72A2F2A1C0064B4DD /* Alamofire */,
-				F6747EBA2A2F66FE0064B4DD /* ProgressHUD */,
+				F6581AD72A35E2E400C5D257 /* ProgressHUD */,
+				F6581ADA2A35E30600C5D257 /* Alamofire */,
+				F6581ADD2A35E35F00C5D257 /* FirebaseAnalytics */,
+				F6581ADF2A35E35F00C5D257 /* FirebaseAuth */,
+				F6581AE12A35E35F00C5D257 /* FirebaseFirestore */,
 			);
 			productName = qrDoor;
 			productReference = F607971F2A09666A0030CFC8 /* qrDoor.app */;
@@ -386,9 +386,9 @@
 			);
 			mainGroup = F60797162A09666A0030CFC8;
 			packageReferences = (
-				F60797542A0967AF0030CFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				F6747EB62A2F2A1C0064B4DD /* XCRemoteSwiftPackageReference "Alamofire" */,
-				F6747EB92A2F66FE0064B4DD /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				F6581AD62A35E2E400C5D257 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				F6581AD92A35E30600C5D257 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F6581ADC2A35E35F00C5D257 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = F60797202A09666A0030CFC8 /* Products */;
 			projectDirPath = "";
@@ -622,7 +622,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = R7KP5757Z8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = qrDoor/Info.plist;
@@ -635,12 +635,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.omercelikel.qrDoor;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omercelikel.qrDoor2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -650,7 +653,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = R7KP5757Z8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = qrDoor/Info.plist;
@@ -663,12 +666,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.omercelikel.qrDoor;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omercelikel.qrDoor2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -790,23 +796,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F60797542A0967AF0030CFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-		F6747EB62A2F2A1C0064B4DD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		F6747EB92A2F66FE0064B4DD /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+		F6581AD62A35E2E400C5D257 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
 			requirement = {
@@ -814,33 +804,49 @@
 				minimumVersion = 13.0.0;
 			};
 		};
+		F6581AD92A35E30600C5D257 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F6581ADC2A35E35F00C5D257 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F60797552A0967AF0030CFC8 /* FirebaseAnalytics */ = {
+		F6581AD72A35E2E400C5D257 /* ProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F60797542A0967AF0030CFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
+			package = F6581AD62A35E2E400C5D257 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
 		};
-		F60797572A0967AF0030CFC8 /* FirebaseAuth */ = {
+		F6581ADA2A35E30600C5D257 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F60797542A0967AF0030CFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		F60797592A0967AF0030CFC8 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F60797542A0967AF0030CFC8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		F6747EB72A2F2A1C0064B4DD /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F6747EB62A2F2A1C0064B4DD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = F6581AD92A35E30600C5D257 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		F6747EBA2A2F66FE0064B4DD /* ProgressHUD */ = {
+		F6581ADD2A35E35F00C5D257 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F6747EB92A2F66FE0064B4DD /* XCRemoteSwiftPackageReference "ProgressHUD" */;
-			productName = ProgressHUD;
+			package = F6581ADC2A35E35F00C5D257 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F6581ADF2A35E35F00C5D257 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6581ADC2A35E35F00C5D257 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F6581AE12A35E35F00C5D257 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6581ADC2A35E35F00C5D257 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
